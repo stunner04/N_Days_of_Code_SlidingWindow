@@ -49,4 +49,6 @@ int main()
     return 0;
 }
 
+// TC = O(N) SC = O(N)
 // https://www.codingninjas.com/studio/problems/distinct-characters_2221410?leftPanelTab=0
+//https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1
