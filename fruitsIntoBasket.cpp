@@ -1,10 +1,15 @@
 class Solution
 {
 public:
-    int totalFruit(vector<int> &arr)
+    int totalFruit(vector<int> &arr) // either basket 1 or basket 2 will get filled.
     {
         ios_base::sync_with_stdio(false);
         cin.tie(NULL);
+
+        if (arr.size() == 1) // size of arr is 1 return 1
+        {
+            return 1;
+        }
 
         int i = 0, j = 0, maxi = 0;
         map<int, int> mp;
@@ -32,8 +37,11 @@ public:
             }
             j++;
         }
+        if (mp.size() == 1) // if arr have same elements then return arr size
+        {
+            return arr.size();
+        }
         return maxi;
     }
 };
-
-//https://leetcode.com/problems/fruit-into-baskets/
+// https://leetcode.com/problems/fruit-into-baskets/
